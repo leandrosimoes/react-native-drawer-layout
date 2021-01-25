@@ -1,46 +1,22 @@
 {
-  "name": "react-native-drawer-layout",
-  "version": "2.0.0",
+  "name": "react-native-ls-drawer-layout",
+  "version": "2.0.1",
   "description": "A platform-agnostic drawer layout. Pure JavaScript implementation on iOS and native implementation on Android. Why? Because the drawer layout is a useful component regardless of the platform! And if you can use it without changing any code, that's perfect.",
   "main": "dist/DrawerLayout.js",
   "scripts": {
     "babel": "babel src --out-dir dist",
-    "build": "npm run-script clear && npm run-script babel",
-    "clear": "rm -rf dist/ && mkdir dist/",
-    "lint:staged": "lint-staged",
-    "prepublish": "npm run build",
-    "test": "flow --show-all-errors",
-    "format": "prettier --write --single-quote --trailing-comma all --tab-width 4 src/**/*.js"
+    "build": "yarn clear && yarn babel",
+    "clear": "rm -rf dist/",
+    "prepublish": "yarn build"
   },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write --single-quote --trailing-comma all --tabWidth 4",
-      "git add"
-    ]
-  },
-  "pre-commit": [
-    "lint:staged",
-    "test"
-  ],
   "files": [
     "dist/"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-native-community/react-native-drawer-layout.git"
+    "url": "git@github.com:leandrosimoes/react-native-drawer-layout.git"
   },
-  "author": "Brent Vatne <brentvatne@gmail.com> (https://github.com/brentvatne)",
-  "contributors": [
-    {
-      "name": "Marc Mendiola",
-      "email": "marc@iodine.com"
-    },
-    {
-      "name": "Daniel Schmidt",
-      "email": "daniel.maximilian@gmx.net",
-      "url": "http://danielmschmidt.de"
-    }
-  ],
+  "author": "Leandro Simões <leandro.simoes@outlook.com> (https://github.com/leandrosimoes)",
   "xo": {
     "ignores": [
       "DrawerLayoutExample/**",
