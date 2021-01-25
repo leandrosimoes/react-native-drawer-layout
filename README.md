@@ -15,7 +15,7 @@ This includes the differences between our implementation and the official one [D
 
 ## Demo
 
-![](https://raw.githubusercontent.com/react-native-community/react-native-ls-drawer-layout/master/example.gif)
+![](https://raw.githubusercontent.com/leandrosimoes/react-native-ls-drawer-layout/master/example.gif)
 
 ## Examples
 
